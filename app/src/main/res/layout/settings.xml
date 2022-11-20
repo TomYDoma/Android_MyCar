@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad1">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piediagramm"
+        android:layout_width="407dp"
+        android:layout_height="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.336" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="256dp"
+        android:background="@color/gray1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="413dp"
+            android:layout_height="33dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="166dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Прочее:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/prochee"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0р"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="413dp"
+            android:layout_height="33dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="166dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Шиномонтаж:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/shina"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0р"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="413dp"
+            android:layout_height="33dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.443">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="166dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Мойка:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/wash"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0р"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="413dp"
+            android:layout_height="33dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.233">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="166dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Ремонт:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/rem"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0р"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="413dp"
+            android:layout_height="33dp"
+            android:background="@color/gray"
+            android:orientation="horizontal"
+            android:paddingEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.031">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="166dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="Заправка:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textIsSelectable="false"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/zap"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0р"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_width="450dp"
+        android:layout_height="67dp"
+        android:layout_centerInParent="true"
+        android:background="@color/gray2"
+        android:onClick="OnClickMainBack"
+        android:text="Главный экран"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toTopOf="@+id/piediagramm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
